@@ -19,3 +19,5 @@ def swap(x, y):
 # Invoke the function "swap" using the following scenarios:
 # - "Apple", 10
 # - 9, 17
+
+swap(9,17)
