@@ -6,10 +6,9 @@ def swap(x, y):
     - Return -1 if x and y is not numeric, and
     - print the swapped values if both x and y are numeric.
     """
-
+ # if x is not a number or y is not a number return nothing, else return swapped values
     if not isinstance(x, (int, float)) or not isinstance(y, (int, float)):
-    #if x is not a number or y is not a number, then return -1
-        return -1
+          return -1
     x, y = y, x
     print(f"x = {x}, y = {y}")
     return x, y
@@ -20,4 +19,5 @@ def swap(x, y):
 # - "Apple", 10
 # - 9, 17
 
-swap(9,17)
+swap ("Apple", 10)
+swap (9,17)
