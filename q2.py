@@ -20,7 +20,12 @@ def find_and_replace(lst, find_val, replace_val):
 
     return lst
 
-# Task 2
-# Invoke the function "find_and_replace" using the following scenarios:
-# - [1, 2, 3, 4, 2, 2], 2, 5
-# - ["apple", "banana", "apple"], "apple", "orange"
+# Task 2: testing the function
+
+# Test case 1
+result1 = find_and_replace([1, 2, 3, 4, 2, 2], 2, 5)
+print(result1)
+
+# Test case 2
+result2 = find_and_replace(["apple", "banana", "apple"], "apple", "orange")
+print(result2)
