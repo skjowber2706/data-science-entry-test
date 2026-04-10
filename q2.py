@@ -1,13 +1,12 @@
 def find_and_replace(lst, find_val, replace_val):
     """
     Task 1
-    - Create a function that searches for all occurrences of a value (find_val) in a given list (lst) and replaces them with another value (replace_val).
-    - lst must be a list.
-    - Return the modified list.
+    - Search for all occurrences of find_val in lst
+    - Replace them with replace_val
+    - Return the modified list
     """
-    return
 
- # check if input is a list
+    # check if input is a list
     if type(lst) != list:
         print("Input must be a list")
         return
@@ -19,6 +18,7 @@ def find_and_replace(lst, find_val, replace_val):
             lst[i] = replace_val  # replace it
 
     return lst
+
 
 # Task 2: testing the function
 
