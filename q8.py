@@ -27,20 +27,52 @@ Constraints: Keep the summary concise and free of technical jargon.
 
 
 # Task 1
-# Read both prompts above carefully, then answer the questions below as comments.
 
 # Q8a: Which prompt do you think will get a better response from an AI?
 # Your answer:
+# I think promptb will give better response
+
 
 # Q8b: Give TWO reasons to support your choice.
+
 # Your answer (Reason 1):
+# prompt_b is better strucutred with clearer steps, so AI can follow easily
+
 # Your answer (Reason 2):
+# it clearly tells the role, task and audience which helps AI understand context better
+
 
 # Q8c: What is ONE strength of the prompt you did NOT choose?
 # Your answer:
+# prompt_a gives more real life context and explanes the situation better
 
 
 # Task 2
+
 # Rewrite either prompt by borrowing ONE element from the other
 # to make it stronger. Explain what you borrowed and why.
+
 # Your answer:
+
+improved_prompt = """
+I am a marketing manager at a retail company and we have just finished 
+a three-month campaign. My team has collected customer feedback through 
+an online survey and we now have about 500 responses stored in a 
+spreadsheet. Each response includes the customer's age group, the 
+product they purchased, their satisfaction rating from 1 to 5, and a 
+short written comment.
+
+Role: You are a data analyst helping a retail marketing team.
+
+Task:
+1. Identify age groups and products with the lowest satisfaction scores.
+2. Extract the most common themes from the written comments.
+3. Summarise findings in an executive summary paragraph.
+
+Audience: CEO presentation on Friday.
+Constraints: keep it simple and no technical jargon.
+"""
+
+# Explanation:
+# I borrowed the "Role" and "structured steps" from prompt_b
+# becuase it makes the instruction more clear and easy for AI to follow
