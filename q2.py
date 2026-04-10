@@ -7,6 +7,18 @@ def find_and_replace(lst, find_val, replace_val):
     """
     return
 
+ # check if input is a list
+    if type(lst) != list:
+        print("Input must be a list")
+        return
+
+    # loop through the list
+    for i in range(len(lst)):
+        # check if current item matches find_val
+        if lst[i] == find_val:
+            lst[i] = replace_val  # replace it
+
+    return lst
 
 # Task 2
 # Invoke the function "find_and_replace" using the following scenarios:
