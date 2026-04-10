@@ -1,14 +1,32 @@
 def update_dictionary(dct, key, value):
     """
     Task 1
-    - Create a function that updates a dictionary (dct) with a new key-value pair.
-    - If the key already exists in dct, print the original value, then update its value.
-    - Return the updated dictionary.
+    - update dictionary with key-value pair
+    - if key alredy exist, print old value then update
+    - return updated dictionary
     """
-    return
+
+    # cheking if input is a dictonary
+    if type(dct) != dict:
+        print("Input must be a dictionary")
+        return
+
+    # cheking if key alredy exist in dictonary
+    if key in dct:
+        print("Original value:", dct[key])  # print old val
+
+    # updaiting or adding new key-value
+    dct[key] = value
+
+    return dct
 
 
-# Task 2
-# Invoke the function "update_dictionary" using the following scenarios:
-# - {}, "name", "Alice"
-# - {"age": 25}, "age", 26
+# Task 2: runing the function
+
+# test case 1
+result1 = update_dictionary({}, "name", "Alice")
+print(result1)
+
+# test case 2
+result2 = update_dictionary({"age": 25}, "age", 26)
+print(result2)
